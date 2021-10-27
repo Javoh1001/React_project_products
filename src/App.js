@@ -294,6 +294,3 @@ export default class App extends Component {
     )
   }
 }
-
-let text = 'welcome' * 5;
-console.log(text);
