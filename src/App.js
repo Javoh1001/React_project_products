@@ -199,7 +199,14 @@ const detail = [
 
 
 export default class App extends Component {
+      state = {
+        active:1,
+      }
+  
   render (){
+    const onActive = (id) =>{
+    this.setState({active: id})
+  }
     return(
       <React.Fragment>
       <div className="container">
@@ -217,7 +224,13 @@ export default class App extends Component {
                 {
                   sidebar.map(({id, icon, title}) =>{
                     return(
-                      <Sidebar_left key={id} Icon={icon} title={title}/>
+                      <div  onClick={() => onActive(id)}>
+                        <Sidebar_left  
+                        active={this.state.active===id}
+                        id={id} 
+                        Icon={icon} 
+                        title={title}/>
+                      </div>
                     )
                   })
                 }
@@ -287,7 +300,6 @@ export default class App extends Component {
             
 
         </div>
-
     </div>
     
    </React.Fragment>

@@ -65,3 +65,10 @@ a{
     justify-content: center;
     margin-right:9px;
 }
+
+.active-true ul li{
+    background-color:red;
+}
+.active-true ul li a{
+    color:#fff;
+}
