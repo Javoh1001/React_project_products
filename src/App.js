@@ -3,28 +3,17 @@ import './App.css';
 import Sidebar_left from './Sidebar/Sidebar_left';
 import Bitmap from './Sidebar/images/Bitmap.png';
 import {ReactComponent as Path} from './icons/Path.svg';
+import {ReactComponent as User} from './icons/users.svg';
 import Sidebar_bottom from './Sidebar/Sidebar_bottom';
 import Product from './products/Product';
 import Detail from './detail/Detail';
-import {ReactComponent as Oval } from './detail/ikki.svg';
-import {ReactComponent as Bir } from './detail/bir.svg';
-import {ReactComponent as Uch } from './detail/uch.svg';
-import {ReactComponent as Tort } from './detail/tort.svg';
-import {ReactComponent as Besh } from './detail/besh.svg';
-import {ReactComponent as Olti } from './detail/olti.svg';
-import {ReactComponent as Yetti } from './detail/yetti.svg';
-import {ReactComponent as Sakkiz } from './detail/sakkiz.svg';
-import {ReactComponent as Toqqiz } from './detail/toqqiz.svg';
-import {ReactComponent as On } from './detail/on.svg';
-import {ReactComponent as Trash } from './detail/trash.svg';
-import {ReactComponent as Edit } from './detail/edit.svg';
 import Group from './imagess/Groupp.png';
 import Plus from './imagess/plus.png';
-
+import { detail } from './detail/Detail';
 const sidebar = [
   {
     id:1,
-    icon:Path,
+    icon:User,
     title:'Home'
   },
   {
@@ -91,109 +80,7 @@ const product = [
 
 {/* detail_products start */}
 
-const detail = [
-  {
-    id:1,
-    img:Bir,
-    title_food:'Lavash mini',
-    second_title:'Lavash',
-    cost:'18,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:2,
-    img:Oval,
-    title_food:'ChizburgerMax',
-    second_title:'Burger',
-    cost:'23,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:3,
-    img:Uch,
-    title_food:'Lavash Max',
-    second_title:'Lavash',
-    cost:'8,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:4,
-    img:Tort,
-    title_food:'Lavash c cirom',
-    second_title:'Lavash',
-    cost:'21,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:5,
-    img:Besh,
-    title_food:'Burger mini',
-    second_title:'Burger',
-    cost:'11,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:6,
-    img:Olti,
-    title_food:'Lavash mini',
-    second_title:'Lavash',
-    cost:'18,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:7,
-    img:Yetti,
-    title_food:'Lavash mini',
-    second_title:'Lavash',
-    cost:'18,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:8,
-    img:Sakkiz,
-    title_food:'Coca-cola 1.5L',
-    second_title:'Ichimlik',
-    cost:'35,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:9,
-    img:Toqqiz,
-    title_food:'Coca-cola 1l',
-    second_title:'Ichimlik',
-    cost:'18,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
-  {
-    id:10,
-    img:On,
-    title_food:'Burger mini',
-    second_title:'Lavash',
-    cost:'11,000',
-    third_title:'Kichkina lavash',
-    edit:Edit,
-    delete1:Trash,
-  },
 
-]
 
 {/* detail_products end */}
 

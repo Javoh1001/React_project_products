@@ -22,7 +22,7 @@ a{
     transition:all .3s linear;
 }
 .sidebar_menu ul li:hover{
-    background-color:#FCB600;
+    background-color:rgba(0,0,0,.2);
 }
 .sidebar_menu ul li i{
     width:36px;
@@ -67,7 +67,7 @@ a{
 }
 
 .active-true ul li{
-    background-color:red;
+    background-color:rgba(0,0,0,.5);
 }
 .active-true ul li a{
     color:#fff;
