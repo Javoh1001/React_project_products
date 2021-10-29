@@ -1,5 +1,14 @@
 import React from 'react';
-import './sidebar.css'
+import './sidebar.css';
+import {ReactComponent as Path} from './Path.svg'
+
+export const exit = [
+    {
+      id:7,
+      icon:Path,
+      title:'Chiqish'
+    },
+  ]
 class Sidebar_bottom extends React.Component{
     render(){
         const {Icon} = this.props;

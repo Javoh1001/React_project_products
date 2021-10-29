@@ -2,87 +2,16 @@ import React, {Component} from 'react';
 import './App.css';
 import Sidebar_left from './Sidebar/Sidebar_left';
 import Bitmap from './Sidebar/images/Bitmap.png';
-import {ReactComponent as Path} from './icons/Path.svg';
-import {ReactComponent as User} from './icons/users.svg';
 import Sidebar_bottom from './Sidebar/Sidebar_bottom';
 import Product from './products/Product';
 import Detail from './detail/Detail';
 import Group from './imagess/Groupp.png';
 import Plus from './imagess/plus.png';
 import { detail } from './detail/Detail';
-const sidebar = [
-  {
-    id:1,
-    icon:User,
-    title:'Home'
-  },
-  {
-    id:2,
-    icon:Path,
-    title:'About'
-  },
-  {
-    id:3,
-    icon:Path,
-    title:'News'
-  },
-  {
-    id:4,
-    icon:Path,
-    title:'Blogs'
-  },
-  {
-    id:5,
-    icon:Path,
-    title:'Portfolio'
-  },
-  {
-    id:6,
-    icon:Path,
-    title:'Contacts'
-  },
-  
-]
+import { sidebar } from './Sidebar/Sidebar_left';
+import { exit } from './Sidebar/Sidebar_bottom';
+import { product } from './products/Product'
 
-const exit = [
-  {
-    id:7,
-    icon:Path,
-    title:'Chiqish'
-  },
-]
-
-// menu
-
-const product = [
-  {
-      id:1,
-      products:'MAXSULOT'
-  },
-  {
-      id:2,
-      products:'KATAGERIYA'
-  },
-  {
-      id:3,
-      products:'NARXI'
-  },
-  {
-      id:4,
-      products:'QO\'SHIMCHA'
-  },
-  {
-      id:5,
-      products:'ACTION'
-  },
-
-]
-
-{/* detail_products start */}
-
-
-
-{/* detail_products end */}
 
 
 export default class App extends Component {
