@@ -12,7 +12,6 @@ import {ReactComponent as Toqqiz } from './toqqiz.svg';
 import {ReactComponent as On } from './on.svg';
 import {ReactComponent as Trash } from './trash.svg';
 import {ReactComponent as Edit } from './edit.svg';
-import {ReactComponent as Settings } from './settings.svg';
 
 
 export const detail = [
