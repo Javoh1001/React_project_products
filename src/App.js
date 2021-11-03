@@ -17,12 +17,23 @@ import { product } from './products/Product'
 export default class App extends Component {
       state = {
         active:1,
+        detail:detail,
       }
+     
   
   render (){
     const onActive = (id) =>{
-    this.setState({active: id})
-  }
+      this.setState({active: id})
+    }
+   
+
+    const onFilter = ({target}) =>{
+      let data1 = detail.filter((value) => value.second_title.includes(target.value));
+      console.log(data1);
+      this.setState({
+        detail:data1
+      })
+    }
     return(
       <React.Fragment>
       <div className="container">
@@ -76,7 +87,7 @@ export default class App extends Component {
                     <a className="add">Yangi mahsulot <br /> qo'shish</a>
                 </div>   
                 <div className="navbar_top_input">
-                    <div><input placeholder="Qidirish"/></div>
+                    <div><input placeholder="Qidirish" onChange={onFilter} /></div>
                     <a href="#"><img src={Group} /></a>
                 </div> 
             </div>
@@ -95,12 +106,12 @@ export default class App extends Component {
             {/* products menu end */}
             
             {/* detail_products start */}
-
+            {/* {id,img,title_food,second_title,cost,third_title,edit,delete1} */}
             <div className="detail_products">
               {
-                detail.map(({id,img,title_food,second_title,cost,third_title,edit,delete1}) =>{
+                detail.map((value) =>{
                   return(
-                    <Detail key={id} Img={img} title_food={title_food} second_title={second_title} cost={cost} third_title={third_title} Edit={edit} Delete1={delete1} />
+                    <Detail key={value.id} value={value} />
                   )
                 })
               }

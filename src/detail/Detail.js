@@ -17,122 +17,123 @@ import {ReactComponent as Edit } from './edit.svg';
 export const detail = [
     {
       id:1,
-      img:Bir,
+      Img:Bir,
       title_food:'Lavash mini',
       second_title:'Lavash',
       cost:'18,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:2,
-      img:Oval,
+      Img:Oval,
       title_food:'ChizburgerMax',
       second_title:'Burger',
       cost:'23,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:3,
-      img:Uch,
+      Img:Uch,
       title_food:'Lavash Max',
       second_title:'Lavash',
       cost:'8,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:4,
-      img:Tort,
+      Img:Tort,
       title_food:'Lavash c cirom',
       second_title:'Lavash',
       cost:'21,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:5,
-      img:Besh,
+      Img:Besh,
       title_food:'Burger mini',
       second_title:'Burger',
       cost:'11,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:6,
-      img:Olti,
+      Img:Olti,
       title_food:'Lavash mini',
       second_title:'Lavash',
       cost:'18,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:7,
-      img:Yetti,
+      Img:Yetti,
       title_food:'Lavash mini',
       second_title:'Lavash',
       cost:'18,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:8,
-      img:Sakkiz,
+      Img:Sakkiz,
       title_food:'Coca-cola 1.5L',
       second_title:'Ichimlik',
       cost:'35,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:9,
-      img:Toqqiz,
+      Img:Toqqiz,
       title_food:'Coca-cola 1l',
       second_title:'Ichimlik',
       cost:'18,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
     {
       id:10,
-      img:On,
+      Img:On,
       title_food:'Burger mini',
       second_title:'Lavash',
       cost:'11,000',
       third_title:'Kichkina lavash',
-      edit:Edit,
-      delete1:Trash,
+      Edit:Edit,
+      Delete1:Trash,
     },
   
   ]
 
 export default class Detail extends React.Component{
     render(){
-        const {Img} = this.props;
-        const {Delete1} = this.props;
-        const {Edit} = this.props;
+        const {Img} = this.props.value
+        const {Delete1} = this.props.value
+        const {Edit} = this.props.value
+        
         return(
             <div className="detail">
                 <ul>
                     <li><a><Img /></a></li>
-                    <li><a>{this.props.title_food}</a></li>
-                    <li><a>{this.props.second_title}</a></li>
-                    <li><a>{this.props.cost}</a></li>
-                    <li><a>{this.props.third_title}</a></li>
+                    <li><a>{this.props.value.title_food}</a></li>
+                    <li><a>{this.props.value.second_title}</a></li>
+                    <li><a>{this.props.value.cost}</a></li>
+                    <li><a>{this.props.value.third_title}</a></li>
                     <li><a><Edit /></a></li>
-                    <li><a><Delete1 /></a></li>
+                    <li><a><Delete1/></a></li>
                 </ul>
             </div>
         )
